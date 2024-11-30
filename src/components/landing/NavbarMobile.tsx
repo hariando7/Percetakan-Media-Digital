@@ -7,10 +7,9 @@ import {
   IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
-import Image from "next/image";
 import { FloatingDock } from "@/components/ui/floating-dock";
 
-function NavbarMobile() {
+function NavbarMobile({ className }: { className?: string }) {
   const links = [
     {
       title: "Beranda",

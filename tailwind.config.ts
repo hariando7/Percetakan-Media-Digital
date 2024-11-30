@@ -11,11 +11,11 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#FF006E", // Hex value untuk primary
-          foreground: "#000000", // Warna teks atau foreground
+          DEFAULT: "#344c99", // Hex value untuk primary
+          foreground: "#ffffff", // Warna teks atau foreground
         },
         secondary: {
-          DEFAULT: "#FF006E", // Hex value untuk secondary
+          DEFAULT: "#344c99", // Hex value untuk secondary
           foreground: "#ffffff", // Warna teks atau foreground
         },
         background: "hsl(var(--background))",
@@ -72,9 +72,7 @@ const config: Config = {
         },
       },
       images: {
-        domains: [
-          "api.microlink.io",
-        ],
+        domains: ["api.microlink.io"],
       },
     },
   },
