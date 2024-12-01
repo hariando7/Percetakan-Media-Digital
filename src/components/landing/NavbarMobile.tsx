@@ -9,7 +9,7 @@ import {
 } from "@tabler/icons-react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 
-function NavbarMobile({ className }: { className?: string }) {
+function NavbarMobile({ }: { className?: string }) {
   const links = [
     {
       title: "Beranda",

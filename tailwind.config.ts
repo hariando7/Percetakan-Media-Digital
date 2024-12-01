@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        title: ["Protest Revolution"],
+      },
       colors: {
         primary: {
           DEFAULT: "#344c99", // Hex value untuk primary
