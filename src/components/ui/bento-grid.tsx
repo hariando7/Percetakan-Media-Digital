@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[16rem] grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto ",
+        "grid md:auto-rows-[16rem] grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto bg-green-500",
         className
       )}
     >
@@ -22,20 +22,20 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   title,
-  // description,
+  description,
   header,
   // icon,
 }: {
   className?: string;
   title?: string | React.ReactNode;
-  // description?: string | React.ReactNode;
+  description?: string | React.ReactNode;
   header?: React.ReactNode;
   // icon?: React.ReactNode;
 }) => {
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento shadow-2xl hover:shadow-2xl transition duration-200 shadow-primary p-4 bg-white border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-xl group/bento hover:shadow-2xl transition duration-200 hover:shadow-secondary p-4 bg-white border-2 border-primary hover:border-secondary justify-between flex flex-col space-y-4",
         className
       )}
     >
@@ -45,9 +45,9 @@ export const BentoGridItem = ({
         <div className="font-sans font-bold text-primary mb-2 mt-2">
           {title}
         </div>
-        {/* <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
           {description}
-        </div> */}
+        </div>
       </div>
     </div>
   );

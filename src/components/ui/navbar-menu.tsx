@@ -32,7 +32,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-primary hover:opacity-[0.9] font-bold pt-1 hover:underline hover:underline-offset-8 hover:transition hover:ease-in-out hover:delay-150 hover:duration-300 hover:-translate-y-1 hover:scale-110"
+        className="cursor-pointer text-primary hover:text-secondary hover:opacity-[0.9] font-bold pt-1 hover:underline hover:underline-offset-8 hover:transition hover:ease-in-out hover:delay-150 hover:duration-300 hover:-translate-y-1 hover:scale-110"
       >
         {item}
       </motion.p>
@@ -118,9 +118,9 @@ export const Menu = ({
       >
         <div className="flex items-center justify-center text-white font-bold">
           <Image
-            src="/assets/images/navbar-logo.png"
-            width={110}
-            height={55}
+            src="/assets/images/newLogo-removebg.png"
+            width={100}
+            height={50}
             alt="Percetakan Media"
             className=""
           />
@@ -132,18 +132,18 @@ export const Menu = ({
           <Link
             href="/login"
             onMouseEnter={handleMouseEnter}
-            className="w-full text-[16px] text-center px-6 py-2 bg-gradient-to-r from-[#54de64] to-[#54de64] text-primary-foreground hover:text-line-10 hover:from-[#54de64]/50 hover:to-[#54de64]/40 hover:bg-gradient-to-r rounded-lg cursor-pointer transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 hover:rotate-1 shadow-md hover:shadow-xl transform-gpu"
+            className="w-full text-[16px] text-center px-6 py-2 bg-gradient-to-r from-secondary to-secondary text-primary-foreground hover:text-line-10 hover:from-white hover:to-white hover:bg-gradient-to-r hover:text-secondary hover:border-2 hover:border-secondary rounded-lg cursor-pointer transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 hover:rotate-1 shadow-md hover:shadow-xl transform-gpu"
           >
             {isFirstLoading ? (
               <Loader className="animate-spin" />
             ) : (
               <>
                 <div className="flex gap-2">
-                  <span>
+                  {/* <span>
                     <BsWhatsapp className="w-6 h-6" />
-                  </span>
+                  </span> */}
                   <span className="animated-text flex justify-center font-bold">
-                    {"WhatsApp".split("").map((letter, index) => (
+                    {"Masuk".split("").map((letter, index) => (
                       <span
                         key={index}
                         ref={(el) => {

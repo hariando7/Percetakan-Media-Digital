@@ -48,22 +48,22 @@ function NavbarDekstop({ className }: { className?: string }) {
               />
             </div>
           </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Portfolio">
+          {/* <MenuItem setActive={setActive} active={active} item="Portfolio">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/hobby">Hobby</HoveredLink>
               <HoveredLink href="/individual">Individual</HoveredLink>
               <HoveredLink href="/team">Team</HoveredLink>
               <HoveredLink href="/enterprise">Enterprise</HoveredLink>
             </div>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Paket & Harga">
+          </MenuItem> */}
+          {/* <MenuItem setActive={setActive} active={active} item="Paket & Harga">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/hobby">Hobby</HoveredLink>
               <HoveredLink href="/individual">Individual</HoveredLink>
               <HoveredLink href="/team">Team</HoveredLink>
               <HoveredLink href="/enterprise">Enterprise</HoveredLink>
             </div>
-          </MenuItem>
+          </MenuItem> */}
           <MenuItem setActive={setActive} active={active} item="Testimoni">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/hobby">Hobby</HoveredLink>

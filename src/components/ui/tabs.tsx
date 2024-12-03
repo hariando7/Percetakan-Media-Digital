@@ -49,7 +49,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "items-center justify-center m-auto flex [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
           containerClassName
         )}
       >
@@ -72,7 +72,7 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gradient-to-r from-[#FFD700] to-[#FFB84D] shadow-lg rounded-full text-white",
+                  "absolute inset-0 bg-gradient-to-r from-secondary to-secondary shadow-lg rounded-full text-white",
                   activeTabClassName
                 )}
               />
@@ -128,16 +128,16 @@ export const FadeInDiv = ({
           key={tab.value}
           layoutId={tab.value}
           style={{
-            scale: 1 - idx * 0.1,
-            left: hovering ? idx * -50 : 0,
+            // scale: 1 - idx * 0.1,
+            left: hovering ? idx * 0 : 0,
             zIndex: -idx,
-            opacity: idx < 3 ? 1 - idx * 0.1 : 0,
+            opacity: idx < 3 ? 1 - idx * 5 : 0,
           }}
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
           className={cn(
-            "w-full h-full absolute top-0 left-0 flex items-center justify-center",
+            "w-full h-full absolute top-0 left-0 items-start justify-start",
             className
           )}
         >

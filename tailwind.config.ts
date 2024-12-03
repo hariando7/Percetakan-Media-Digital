@@ -14,11 +14,12 @@ const config: Config = {
       },
       colors: {
         primary: {
-          DEFAULT: "#344c99", // Hex value untuk primary
+          // DEFAULT: "#344c99", // Hex value untuk primary
+          DEFAULT: "#06264d", // Hex value untuk primary
           foreground: "#ffffff", // Warna teks atau foreground
         },
         secondary: {
-          DEFAULT: "#344c99", // Hex value untuk secondary
+          DEFAULT: "#ed3232", // Hex value untuk secondary
           foreground: "#ffffff", // Warna teks atau foreground
         },
         background: "hsl(var(--background))",
