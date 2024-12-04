@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import React, { useState } from "react";
 
 export const BentoGrid = ({
   className,
@@ -7,14 +8,78 @@ export const BentoGrid = ({
   className?: string;
   children?: React.ReactNode;
 }) => {
+  const itemsPerPage = 8; // Jumlah data per halaman
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const totalItems = React.Children.count(children);
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
+  };
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const displayedItems = React.Children.toArray(children).slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
+
   return (
-    <div
-      className={cn(
-        "grid md:auto-rows-[16rem] grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto bg-green-500",
-        className
-      )}
-    >
-      {children}
+    <div>
+      <div
+        className={cn(
+          "grid md:auto-rows-[16rem] grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto",
+          className
+        )}
+      >
+        {displayedItems}
+      </div>
+
+      <div className="flex justify-between mt-4">
+        <button
+          onClick={() => {
+            if (currentPage === 1) {
+              alert("Anda sudah berada di halaman pertama.");
+            } else {
+              handlePrevPage();
+            }
+          }}
+          disabled={currentPage === 1}
+          className={`px-4 py-2 rounded-md border text-sm transition duration-200 ${
+            currentPage === 1
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+          }`}
+        >
+          Kembali
+        </button>
+
+        <span className="flex m-auto justify-center items-center text-primary font-bold text-sm hover:text-secondary">
+          {`Page ${currentPage} of ${totalPages}`}
+        </span>
+
+        <button
+          onClick={() => {
+            if (currentPage === totalPages) {
+              alert("Anda sudah berada di halaman terakhir.");
+            } else {
+              handleNextPage();
+            }
+          }}
+          disabled={currentPage === totalPages}
+          className={`px-4 py-2 rounded-md border text-sm transition duration-200 ${
+            currentPage === totalPages
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+          }`}
+        >
+          Selanjutnya
+        </button>
+      </div>
     </div>
   );
 };
@@ -24,8 +89,8 @@ export const BentoGridItem = ({
   title,
   description,
   header,
-  // icon,
-}: {
+}: // icon,
+{
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;

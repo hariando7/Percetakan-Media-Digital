@@ -114,7 +114,7 @@ export const Menu = ({
     <>
       <div
         onMouseLeave={() => setActive(null)}
-        className="fixed top-0 left-0 right-0 z-50 bg-white shadow-input md:rounded-none lg:w-full flex justify-between pl-8 pr-8 transition-transform duration-500 ease-in-out"
+        className="fixed top-0 left-0 right-0 z-50 bg-white shadow-input drop-shadow-xl md:rounded-none lg:w-full flex justify-between pl-8 pr-8 transition-transform duration-500 ease-in-out"
       >
         <div className="flex items-center justify-center text-white font-bold">
           <Image
@@ -205,9 +205,7 @@ export const ProductItem = ({
       />
       <div>
         <h4 className="text-xl font-bold mb-1 text-black">{title}</h4>
-        <p className="text-neutral-700 text-sm max-w-[10rem]">
-          {description}
-        </p>
+        <p className="text-neutral-700 text-sm max-w-[10rem]">{description}</p>
       </div>
     </Link>
   );

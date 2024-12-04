@@ -1,4 +1,4 @@
-import HomePage from "@/components/landing/HomePage";
+import HomePage from "@/components/landing/page/HomePage";
 import React from "react";
 export const metadata = {
   title: "Percetakan Media",
