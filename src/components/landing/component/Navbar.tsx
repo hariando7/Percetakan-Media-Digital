@@ -15,7 +15,7 @@ import {
   IconBrandX,
   IconExchange,
   IconHome,
-  IconNewSection,
+  // IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
 

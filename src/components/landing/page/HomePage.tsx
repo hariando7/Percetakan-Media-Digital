@@ -1,9 +1,5 @@
 "use client";
 import React from "react";
-// import { HeroParallax } from "@/components/ui/hero-parallax";
-import { useMediaQuery } from "@/app/hooks/useMediaQuery";
-// import { Spotlight } from "@/components/ui/Spotlight";
-// import NavbarMobile from "./NavbarMobile";
 import HeroDekstop from "../component/Hero";
 import ServicesComponents from "../component/Services";
 import AdvertisementComponents from "../component/Advertisement";
@@ -45,7 +41,6 @@ import NavbarComponents from "../component/Navbar";
 // ];
 
 function HomePage() {
-  // const title = ["Percetakan","Bandar Lampung"];
   return (
     <div className="relative w-full bg-black/40">
       {/* Nababr buka */}
