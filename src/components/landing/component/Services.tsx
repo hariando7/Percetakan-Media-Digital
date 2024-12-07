@@ -189,8 +189,8 @@ function ServicesComponents() {
           <div
             className="div"
             onClick={() =>
-              (window.location.href =
-                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
+            (window.location.href =
+              "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
             }
           >
             Kontak saya
@@ -380,8 +380,8 @@ function ServicesComponents() {
           <div
             className="div"
             onClick={() =>
-              (window.location.href =
-                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
+            (window.location.href =
+              "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
             }
           >
             Kontak saya
@@ -571,8 +571,8 @@ function ServicesComponents() {
           <div
             className="div"
             onClick={() =>
-              (window.location.href =
-                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
+            (window.location.href =
+              "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
             }
           >
             Kontak saya
@@ -767,7 +767,7 @@ function ServicesComponents() {
               description={item.description}
               header={item.header}
               // icon={item.icon}
-              className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+              className={i === 1 || i === 8 ? "md:col-span-1" : "bg-white"}
             />
           ))}
         </BentoGrid>
@@ -843,7 +843,16 @@ function ServicesComponents() {
           </section>
         </>
       ) : (
-        <></>
+        <>
+          <section className="bg-gradient-to-b from-white via-white to-white animate-gradient">
+            <div className="h-[1500px] md:h-[900px] w-full p-10 md:p-10 flex justify-between [perspective:1000px] relative flex-col max-w-7xl mx-auto items-start">
+              <h1 className="text-primary hover:text-secondary font-bold text-center justify-center m-auto flex mb-6 pt-4 md:mb-10 md:pt-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                Layanan Jasa Kami
+              </h1>
+              <Tabs tabs={tabs} tabsCard={tabsCard} />
+            </div>
+          </section>
+        </>
       )}
     </>
   );

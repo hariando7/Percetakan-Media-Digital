@@ -43,7 +43,8 @@ function AdvertisementComponents() {
           </section>
         </>
       ) : (
-        <></>
+        <>
+        </>
       )}
     </>
   );

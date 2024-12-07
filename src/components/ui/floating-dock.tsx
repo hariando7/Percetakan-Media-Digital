@@ -42,11 +42,11 @@ const FloatingDockMobile = ({
     className?: string;
 }) => {
     return (
-        <div className={cn("relative bottom-0 bg-black/20", className)}>
+        <div className={cn("relative bottom-0 bg-primary/30 rounded-t-xl", className)}>
             <AnimatePresence>
                 <motion.div
                     layoutId="nav"
-                    className="bottom-full inset-x-0 flex gap-4 p-4"
+                    className="bottom-full inset-x-0 flex gap-10 p-4"
                 >
                     {items.map((item, idx) => (
                         <motion.div
@@ -68,9 +68,9 @@ const FloatingDockMobile = ({
                             <Link
                                 href={item.href}
                                 key={item.title}
-                                className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
+                                className="h-10 w-10 rounded-full bg-primary flex items-center justify-center"
                             >
-                                <div className="h-4 w-4">{item.icon}</div>
+                                <div className="h-6 w-6 font-bold text-white">{item.icon}</div>
                             </Link>
                         </motion.div>
                     ))}

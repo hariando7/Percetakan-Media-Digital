@@ -18,7 +18,14 @@ function FooterComponents() {
           </section>
         </>
       ) : (
-        <></>
+        <>
+          <section className="bg-primary w-full p-2">
+            <p className="text-center flex m-auto text-sm justify-center items-center text-primary-foreground">
+              Copyright © 2024 Percetakan Media by Hariando Muthi. Made with ❤️
+              for a better web.
+            </p>
+          </section>
+        </>
       )}
     </>
   );

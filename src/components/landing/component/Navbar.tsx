@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/navbar-menu";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
+  // IconBrandGithub,
   IconBrandX,
   IconExchange,
   IconHome,
@@ -61,13 +61,13 @@ function NavbarComponents({ className }: { className?: string }) {
       ),
       href: "#",
     },
-    {
-      title: "Kontak",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+    // {
+    //   title: "Kontak",
+    //   icon: (
+    //     <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "#",
+    // },
   ];
 
   return (
@@ -150,7 +150,7 @@ function NavbarComponents({ className }: { className?: string }) {
       ) : (
         <>
           <div className="relative h-screen w-full">
-            <div className="pb-16">ini konten mobile</div>
+            <div className="pb-16">Mobile Device</div>
             <FloatingDock
               className="absolute bottom-0 w-full flex m-auto justify-center"
               items={links}

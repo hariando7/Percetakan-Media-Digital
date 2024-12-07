@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 type Tab = {
   title: string;
   value: string;
@@ -45,16 +46,18 @@ export const Tabs = ({
 
   const [hovering, setHovering] = useState(false);
 
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <>
       <div
         className={cn(
-          "items-center justify-center m-auto flex [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "items-center justify-center m-auto flex [perspective:1000px] relative overflow-auto sm:overflow-visible md:no-visible-scrollbar max-w-full w-full h-20",
           containerClassName
         )}
       >
-        <div className="w-full h-full overflow-x-auto p-2">
-          <div className="flex space-x-4 min-w-max">
+        <div className="w-full h-full overflow-x-auto md:p-2">
+          <div className="flex space-x-2 md:space-x-4 min-w-max">
             {propTabs.map((tab, idx) => (
               <>
                 <button
@@ -66,7 +69,7 @@ export const Tabs = ({
                   onMouseEnter={() => setHovering(true)}
                   onMouseLeave={() => setHovering(false)}
                   className={cn(
-                    "relative px-4 py-2 rounded-full",
+                    "relative px-2 md:px-4 py-2 rounded-full",
                     tabClassName
                   )}
                   style={{
@@ -88,7 +91,7 @@ export const Tabs = ({
                     />
                   )}
                   <span
-                    className={cn("relative block", {
+                    className={cn("relative block text-sm sm:text-base md:text-lg", {
                       "text-white font-bold": active.value === tab.value,
                       "text-black": active.value !== tab.value,
                     })}
@@ -102,18 +105,33 @@ export const Tabs = ({
         </div>
       </div>
       <div className="flex w-full h-full gap-10">
-        <FadeInDiv
-          tabs={tabs}
-          active={active}
-          hovering={hovering}
-          className={cn("", contentClassName)}
-        />
-        <FadeInDivCard
-          tabsCard={propTabsCard}
-          activeCard={activeCard}
-          // hovering={hovering}
-          className={cn("", contentClassName)}
-        />
+        <>
+          {!isMobile ? (
+            <>
+              <FadeInDiv
+                tabs={tabs}
+                active={active}
+                hovering={hovering}
+                className={cn("", contentClassName)}
+              />
+              <FadeInDivCard
+                tabsCard={propTabsCard}
+                activeCard={activeCard}
+                // hovering={hovering}
+                className={cn("", contentClassName)}
+              />
+            </>
+          ) : (
+            <>
+              <FadeInDivCard
+                tabsCard={propTabsCard}
+                activeCard={activeCard}
+                // hovering={hovering}
+                className={cn("", contentClassName)}
+              />
+            </>
+          )}
+        </>
       </div>
     </>
   );
@@ -166,14 +184,14 @@ export const FadeInDivCard = ({
   tabsCard,
   activeCard,
 }: // hovering,
-{
-  className?: string;
-  tabsCard: Tab[];
-  activeCard: Tab;
-  // hovering?: boolean;
-}) => {
+  {
+    className?: string;
+    tabsCard: Tab[];
+    activeCard: Tab;
+    // hovering?: boolean;
+  }) => {
   return (
-    <div className="relative w-full h-full mt-5">
+    <div className="relative w-full md:mt-5">
       {tabsCard.map((tab) => (
         <motion.div
           key={tab.value}
@@ -186,7 +204,7 @@ export const FadeInDivCard = ({
           animate={{
             y: tab.value === activeCard.value ? [0, 40, 0] : 0,
           }}
-          className={cn("absolute w-full top-0 left-0 p-4", className)}
+          className={cn("absolute w-full top-0 left-0 md:p-4", className)}
         >
           {tab.content}
         </motion.div>

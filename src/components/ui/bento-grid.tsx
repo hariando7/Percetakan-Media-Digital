@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const BentoGrid = ({
   className,
@@ -8,8 +8,24 @@ export const BentoGrid = ({
   className?: string;
   children?: React.ReactNode;
 }) => {
-  const itemsPerPage = 8; // Jumlah data per halaman
   const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(8); // Default untuk desktop
+
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+      setItemsPerPage(isMobile ? 4 : 8); // 4 item untuk mobile, 8 untuk desktop
+    };
+
+    // Jalankan saat komponen dimuat
+    updateItemsPerPage();
+
+    // Tambahkan event listener untuk perubahan ukuran layar
+    window.addEventListener("resize", updateItemsPerPage);
+
+    // Bersihkan listener saat komponen dilepas
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
 
   const totalItems = React.Children.count(children);
   const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -49,16 +65,15 @@ export const BentoGrid = ({
             }
           }}
           disabled={currentPage === 1}
-          className={`px-4 py-2 rounded-md border text-sm transition duration-200 ${
-            currentPage === 1
-              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-              : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
-          }`}
+          className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg ${currentPage === 1
+            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+            : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            }`}
         >
           Kembali
         </button>
 
-        <span className="flex m-auto justify-center items-center text-primary font-bold text-sm hover:text-secondary">
+        <span className="flex m-auto justify-center items-center text-primary font-bold hover:text-secondary text-xs sm:text-sm md:text-base">
           {`Page ${currentPage} of ${totalPages}`}
         </span>
 
@@ -71,11 +86,10 @@ export const BentoGrid = ({
             }
           }}
           disabled={currentPage === totalPages}
-          className={`px-4 py-2 rounded-md border text-sm transition duration-200 ${
-            currentPage === totalPages
-              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-              : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
-          }`}
+          className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg ${currentPage === totalPages
+            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+            : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            }`}
         >
           Selanjutnya
         </button>
@@ -90,13 +104,13 @@ export const BentoGridItem = ({
   description,
   header,
 }: // icon,
-{
-  className?: string;
-  title?: string | React.ReactNode;
-  description?: string | React.ReactNode;
-  header?: React.ReactNode;
-  // icon?: React.ReactNode;
-}) => {
+  {
+    className?: string;
+    title?: string | React.ReactNode;
+    description?: string | React.ReactNode;
+    header?: React.ReactNode;
+    // icon?: React.ReactNode;
+  }) => {
   return (
     <div
       className={cn(
