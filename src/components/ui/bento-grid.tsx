@@ -9,12 +9,12 @@ export const BentoGrid = ({
   children?: React.ReactNode;
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(8); // Default untuk desktop
+  const [itemsPerPage, setItemsPerPage] = useState(4); // Default untuk desktop
 
   useEffect(() => {
     const updateItemsPerPage = () => {
       const isMobile = window.matchMedia("(max-width: 768px)").matches;
-      setItemsPerPage(isMobile ? 4 : 8); // 4 item untuk mobile, 8 untuk desktop
+      setItemsPerPage(isMobile ? 4 : 4); // 4 item untuk mobile, 8 untuk desktop
     };
 
     // Jalankan saat komponen dimuat
@@ -45,10 +45,11 @@ export const BentoGrid = ({
   );
 
   return (
-    <div>
+    // awal
+    <div className="">
       <div
         className={cn(
-          "grid md:auto-rows-[16rem] grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto",
+          "grid md:auto-rows-[16rem] grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto md:h-[400px]",
           className
         )}
       >
@@ -65,10 +66,11 @@ export const BentoGrid = ({
             }
           }}
           disabled={currentPage === 1}
-          className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg ${currentPage === 1
-            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-            : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
-            }`}
+          className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg ${
+            currentPage === 1
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+          }`}
         >
           Kembali
         </button>
@@ -86,10 +88,11 @@ export const BentoGrid = ({
             }
           }}
           disabled={currentPage === totalPages}
-          className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg ${currentPage === totalPages
-            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-            : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
-            }`}
+          className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg ${
+            currentPage === totalPages
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "border-secondary bg-secondary text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+          }`}
         >
           Selanjutnya
         </button>
@@ -104,17 +107,18 @@ export const BentoGridItem = ({
   description,
   header,
 }: // icon,
-  {
-    className?: string;
-    title?: string | React.ReactNode;
-    description?: string | React.ReactNode;
-    header?: React.ReactNode;
-    // icon?: React.ReactNode;
-  }) => {
+{
+  className?: string;
+  title?: string | React.ReactNode;
+  description?: string | React.ReactNode;
+  header?: React.ReactNode;
+  // icon?: React.ReactNode;
+}) => {
   return (
+    // Style gambar card
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-2xl transition duration-200 hover:shadow-secondary p-4 bg-white border-2 border-primary hover:border-secondary justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-xl group/bento hover:shadow-2xl transition duration-200 hover:shadow-secondary p-4 bg-white border-2 border-primary hover:border-secondary justify-between flex flex-col space-y-4 h-[550px] md:h-[400px]",
         className
       )}
     >

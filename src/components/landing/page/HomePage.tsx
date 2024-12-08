@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import HeroDekstop from "../component/Hero";
@@ -6,7 +7,6 @@ import ServicesComponents from "../component/Services";
 import AdvertisementComponents from "../component/Advertisement";
 import ClientComponents from "../component/Client";
 import FooterComponents from "../component/Footer";
-// import NavbarComponents from "../component/Navbar";
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import {
   HoveredLink,
@@ -23,39 +23,6 @@ import {
   // IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
-
-// export const products = [
-//   {
-//     title: "Undangan 1",
-//     link: "",
-//     thumbnail: "/assets/images/undangan1.jpg",
-//   },
-//   {
-//     title: "Undangan 2",
-//     link: "",
-//     thumbnail: "/assets/images/undangan2.jpg",
-//   },
-//   {
-//     title: "Undangan 3",
-//     link: "",
-//     thumbnail: "/assets/images/undangan3.jpg",
-//   },
-//   {
-//     title: "Kalender 1",
-//     link: "",
-//     thumbnail: "/assets/images/kalender1.jpg",
-//   },
-//   {
-//     title: "Tabloid 1",
-//     link: "",
-//     thumbnail: "/assets/images/tabloid1.png",
-//   },
-//   {
-//     title: "Yasin 1",
-//     link: "",
-//     thumbnail: "/assets/images/yasin1.jpg",
-//   },
-// ];
 
 const links = [
   {
@@ -110,7 +77,6 @@ function HomePage({ className }: { className?: string }) {
 
   return (
     <div className="relative w-full bg-black/40">
-
       <>
         {!isMobile ? (
           <>
@@ -168,7 +134,11 @@ function HomePage({ className }: { className?: string }) {
           <HoveredLink href="/enterprise">Enterprise</HoveredLink>
         </div>
       </MenuItem> */}
-                <MenuItem setActive={setActive} active={active} item="Testimoni">
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="Testimoni"
+                >
                   <div className="flex flex-col space-y-4 text-sm">
                     <HoveredLink href="/hobby">Hobby</HoveredLink>
                     <HoveredLink href="/individual">Individual</HoveredLink>
