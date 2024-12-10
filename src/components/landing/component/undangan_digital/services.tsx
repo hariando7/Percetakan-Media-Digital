@@ -1140,7 +1140,7 @@ function UndanganDigitalComponents() {
                 "_blank"
               )
             }
-            src="/assets/images/tasmiyahAqiqah1.png"
+            src="/assets/images/tasmiyahaqiqah1.png"
             alt="tidak ada gambar"
             width="500"
             height="500"
@@ -1201,7 +1201,7 @@ function UndanganDigitalComponents() {
                 "_blank"
               )
             }
-            src="/assets/images/tasmiyahAqiqah2.png"
+            src="/assets/images/tasmiyahaqiqah2.png"
             alt="tidak ada gambar"
             width="500"
             height="500"
