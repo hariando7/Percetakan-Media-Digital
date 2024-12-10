@@ -4,7 +4,7 @@ import React from "react";
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import Image from "next/image";
 import { Tabs } from "@/components/ui/tabs";
-import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid-home";
 import {
   IconArrowWaveRightUp,
   // IconBoxAlignRightFilled,
@@ -189,8 +189,8 @@ function ServicesComponents() {
           <div
             className="div"
             onClick={() =>
-            (window.location.href =
-              "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
+              (window.location.href =
+                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
             }
           >
             Kontak saya
@@ -380,8 +380,8 @@ function ServicesComponents() {
           <div
             className="div"
             onClick={() =>
-            (window.location.href =
-              "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
+              (window.location.href =
+                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
             }
           >
             Kontak saya
@@ -571,8 +571,8 @@ function ServicesComponents() {
           <div
             className="div"
             onClick={() =>
-            (window.location.href =
-              "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
+              (window.location.href =
+                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
             }
           >
             Kontak saya
