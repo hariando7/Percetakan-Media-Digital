@@ -29,15 +29,15 @@ const links = [
     icon: (
       <IconHome className="h-full w-full text-white" />
     ),
-    href: "#",
+    href: "/",
   },
 
   {
-    title: "Layanan",
+    title: "Undangan Digital",
     icon: (
       <FcInvite className="h-full w-full text-white" />
     ),
-    href: "#",
+    href: "/undangan-digital",
   },
   // {
   //   title: "Portfolio",

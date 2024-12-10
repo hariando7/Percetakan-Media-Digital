@@ -4,9 +4,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "./button";
+// import { Button } from "./button";
 import { Loader } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const transition = {
   type: "spring",
@@ -172,10 +174,17 @@ export const Menu = ({
         <div className="bg-primary w-full h-full p-2">
           <div className="text-primary-foreground font-bold flex gap-2 justify-between">
             <div className="flex gap-2">
-              <p>Instagram</p>
-              <p>Facbook</p>
+              <p>
+                <FaInstagram className="w-6 h-6 text-white" />
+              </p>
+              <p>
+                <FaFacebookSquare className="w-6 h-6 text-white" />
+              </p>
+              <p>
+                <BsWhatsapp className="w-6 h-6 text-white" />
+              </p>
             </div>
-            <p>Facbook</p>
+            {/* <p>Facbook</p> */}
           </div>
         </div>
       </motion.nav>

@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import HeroDekstop from "../component/Hero";
 import ServicesComponents from "../component/Services";
-import AdvertisementComponents from "../component/Advertisement";
-import ClientComponents from "../component/Client";
+// import AdvertisementComponents from "../component/Advertisement";
+// import ClientComponents from "../component/Client";
 import FooterComponents from "../component/Footer";
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import {
@@ -23,22 +23,20 @@ import {
   // IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
+import Link from "next/link";
+import { FcInvite } from "react-icons/fc";
 
 const links = [
   {
     title: "Beranda",
-    icon: (
-      <IconHome className="h-full w-full text-white" />
-    ),
-    href: "#",
+    icon: <IconHome className="h-full w-full text-white" />,
+    href: "/",
   },
 
   {
-    title: "Layanan",
-    icon: (
-      <IconTerminal2 className="h-full w-full text-white" />
-    ),
-    href: "#",
+    title: "Undangan Digital",
+    icon: <FcInvite className="h-full w-full text-white" />,
+    href: "/undangan-digital",
   },
   // {
   //   title: "Portfolio",
@@ -47,21 +45,17 @@ const links = [
   //   ),
   //   href: "#",
   // },
-  {
-    title: "Paket & Harga",
-    icon: (
-      <IconExchange className="h-full w-full text-white" />
-    ),
-    href: "#",
-  },
+  // {
+  //   title: "Paket & Harga",
+  //   icon: <IconExchange className="h-full w-full text-white" />,
+  //   href: "#",
+  // },
 
-  {
-    title: "Testimoni",
-    icon: (
-      <IconBrandX className="h-full w-full text-white" />
-    ),
-    href: "#",
-  },
+  // {
+  //   title: "Testimoni",
+  //   icon: <IconBrandX className="h-full w-full text-white" />,
+  //   href: "#",
+  // },
   // {
   //   title: "Kontak",
   //   icon: (
@@ -96,25 +90,42 @@ function HomePage({ className }: { className?: string }) {
       </div>
     </div> */}
               <Menu setActive={setActive}>
-                <MenuItem setActive={setActive} active={active} item="Beranda">
-                  <div className="flex flex-col space-y-4 text-sm">
-                    <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                    <HoveredLink href="/interface-design">
+                <Link href={"/"}>
+                  <MenuItem
+                    setActive={setActive}
+                    active={active}
+                    item="Beranda"
+                  >
+                    <div className="flex flex-col space-y-4 text-sm">
+                      <HoveredLink href="/">
+                        Tentang Percetakan Media
+                      </HoveredLink>
+                      <HoveredLink href="/undangan-digital">
+                        Layanan Percetakan Media
+                      </HoveredLink>
+                      {/* <HoveredLink href="/interface-design">
                       Interface Design
                     </HoveredLink>
                     <HoveredLink href="/seo">
                       Search Engine Optimization
                     </HoveredLink>
-                    <HoveredLink href="/branding">Branding</HoveredLink>
-                  </div>
-                </MenuItem>
+                    <HoveredLink href="/branding">Branding</HoveredLink> */}
+                    </div>
+                  </MenuItem>
+                </Link>
                 <MenuItem setActive={setActive} active={active} item="Layanan">
                   <div className="text-sm grid grid-cols-2 gap-10 p-4">
                     <ProductItem
-                      title="Pernikahan"
-                      href=""
-                      src="/assets/images/undangan1.jpg"
-                      description="Prepare for tech interviews like never before."
+                      title="Tema Premium 1"
+                      href="/undangan-digital"
+                      src="/assets/images/premium1.png"
+                      description="Revisi Sepuasnya"
+                    />
+                    <ProductItem
+                      title="Tema Premium 2"
+                      href="/undangan-digital"
+                      src="/assets/images/premium2.png"
+                      description="Revisi Sepuasnya"
                     />
                   </div>
                 </MenuItem>
@@ -134,7 +145,7 @@ function HomePage({ className }: { className?: string }) {
           <HoveredLink href="/enterprise">Enterprise</HoveredLink>
         </div>
       </MenuItem> */}
-                <MenuItem
+                {/* <MenuItem
                   setActive={setActive}
                   active={active}
                   item="Testimoni"
@@ -153,7 +164,7 @@ function HomePage({ className }: { className?: string }) {
                     <HoveredLink href="/team">Team</HoveredLink>
                     <HoveredLink href="/enterprise">Enterprise</HoveredLink>
                   </div>
-                </MenuItem>
+                </MenuItem> */}
               </Menu>
             </div>
 
@@ -166,11 +177,11 @@ function HomePage({ className }: { className?: string }) {
             {/* Services Tutup */}
 
             {/* Advertisement Buka*/}
-            <AdvertisementComponents />
+            {/* <AdvertisementComponents /> */}
             {/* Advertisement Tutup*/}
 
             {/* Client Buka */}
-            <ClientComponents />
+            {/* <ClientComponents /> */}
             {/* Client Tutup */}
 
             {/* Footer Buka */}

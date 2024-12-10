@@ -2243,7 +2243,7 @@ function UndanganDigitalComponents() {
             onClick={() =>
               window.open("https://percetakanmedia.com/elegant-01/", "_blank")
             }
-            src="/assets/images/elegant.png"
+            src="/assets/images/elegant1.png"
             alt="tidak ada gambar"
             width="500"
             height="500"
@@ -2484,7 +2484,7 @@ function UndanganDigitalComponents() {
                 "_blank"
               )
             }
-            src="/assets/images/engagementday3.png"
+            src="/assets/images/engagementday4.png"
             alt="tidak ada gambar"
             width="500"
             height="500"
