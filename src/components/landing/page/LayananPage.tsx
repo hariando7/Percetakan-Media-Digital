@@ -22,21 +22,18 @@ import {
   // FcInvite
 } from "@tabler/icons-react";
 import UndanganDigitalComponents from "../component/undangan_digital/services";
+import Link from "next/link";
 
 const links = [
   {
     title: "Beranda",
-    icon: (
-      <IconHome className="h-full w-full text-white" />
-    ),
+    icon: <IconHome className="h-full w-full text-white" />,
     href: "/",
   },
 
   {
     title: "Undangan Digital",
-    icon: (
-      <FcInvite className="h-full w-full text-white" />
-    ),
+    icon: <FcInvite className="h-full w-full text-white" />,
     href: "/undangan-digital",
   },
   // {
@@ -95,28 +92,51 @@ function LayananPage({ className }: { className?: string }) {
       </div>
     </div> */}
               <Menu setActive={setActive}>
-                <MenuItem setActive={setActive} active={active} item="Beranda">
-                  <div className="flex flex-col space-y-4 text-sm">
-                    <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                    <HoveredLink href="/interface-design">
+                <Link href={"/"}>
+                  <MenuItem
+                    setActive={setActive}
+                    active={active}
+                    item="Beranda"
+                  >
+                    <div className="flex flex-col space-y-4 text-sm">
+                      <HoveredLink href="/">
+                        Tentang Percetakan Media
+                      </HoveredLink>
+                      <HoveredLink href="/undangan-digital">
+                        Layanan Percetakan Media
+                      </HoveredLink>
+                      {/* <HoveredLink href="/interface-design">
                       Interface Design
                     </HoveredLink>
                     <HoveredLink href="/seo">
                       Search Engine Optimization
                     </HoveredLink>
-                    <HoveredLink href="/branding">Branding</HoveredLink>
-                  </div>
-                </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Layanan">
-                  <div className="text-sm grid grid-cols-2 gap-10 p-4">
-                    <ProductItem
-                      title="Pernikahan"
-                      href=""
-                      src="/assets/images/undangan1.jpg"
-                      description="Prepare for tech interviews like never before."
-                    />
-                  </div>
-                </MenuItem>
+                    <HoveredLink href="/branding">Branding</HoveredLink> */}
+                    </div>
+                  </MenuItem>
+                </Link>
+                <Link href={"/undangan-digital"}>
+                  <MenuItem
+                    setActive={setActive}
+                    active={active}
+                    item="Layanan"
+                  >
+                    <div className="text-sm grid grid-cols-2 gap-10 p-4">
+                      <ProductItem
+                        title="Tema Premium 1"
+                        href="/undangan-digital"
+                        src="/assets/images/premium1.png"
+                        description="Revisi Sepuasnya"
+                      />
+                      <ProductItem
+                        title="Tema Premium 2"
+                        href="/undangan-digital"
+                        src="/assets/images/premium2.png"
+                        description="Revisi Sepuasnya"
+                      />
+                    </div>
+                  </MenuItem>
+                </Link>
                 {/* <MenuItem setActive={setActive} active={active} item="Portfolio">
         <div className="flex flex-col space-y-4 text-sm">
           <HoveredLink href="/hobby">Hobby</HoveredLink>
@@ -133,7 +153,7 @@ function LayananPage({ className }: { className?: string }) {
           <HoveredLink href="/enterprise">Enterprise</HoveredLink>
         </div>
       </MenuItem> */}
-                <MenuItem
+                {/* <MenuItem
                   setActive={setActive}
                   active={active}
                   item="Testimoni"
@@ -152,7 +172,7 @@ function LayananPage({ className }: { className?: string }) {
                     <HoveredLink href="/team">Team</HoveredLink>
                     <HoveredLink href="/enterprise">Enterprise</HoveredLink>
                   </div>
-                </MenuItem>
+                </MenuItem> */}
               </Menu>
             </div>
 

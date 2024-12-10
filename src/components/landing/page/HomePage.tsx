@@ -113,22 +113,28 @@ function HomePage({ className }: { className?: string }) {
                     </div>
                   </MenuItem>
                 </Link>
-                <MenuItem setActive={setActive} active={active} item="Layanan">
-                  <div className="text-sm grid grid-cols-2 gap-10 p-4">
-                    <ProductItem
-                      title="Tema Premium 1"
-                      href="/undangan-digital"
-                      src="/assets/images/premium1.png"
-                      description="Revisi Sepuasnya"
-                    />
-                    <ProductItem
-                      title="Tema Premium 2"
-                      href="/undangan-digital"
-                      src="/assets/images/premium2.png"
-                      description="Revisi Sepuasnya"
-                    />
-                  </div>
-                </MenuItem>
+                <Link href={"/undangan-digital"}>
+                  <MenuItem
+                    setActive={setActive}
+                    active={active}
+                    item="Layanan"
+                  >
+                    <div className="text-sm grid grid-cols-2 gap-10 p-4">
+                      <ProductItem
+                        title="Tema Premium 1"
+                        href="/undangan-digital"
+                        src="/assets/images/premium1.png"
+                        description="Revisi Sepuasnya"
+                      />
+                      <ProductItem
+                        title="Tema Premium 2"
+                        href="/undangan-digital"
+                        src="/assets/images/premium2.png"
+                        description="Revisi Sepuasnya"
+                      />
+                    </div>
+                  </MenuItem>
+                </Link>
                 {/* <MenuItem setActive={setActive} active={active} item="Portfolio">
         <div className="flex flex-col space-y-4 text-sm">
           <HoveredLink href="/hobby">Hobby</HoveredLink>
