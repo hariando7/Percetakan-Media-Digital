@@ -5001,7 +5001,7 @@ function UndanganDigitalComponents() {
             {/* konten */}
             <div className="h-[1000px] w-full p-10 flex justify-between [perspective:1000px] relative flex-col max-w-7xl mx-auto items-start mt-20">
               <h1 className="font-bold text-4xl text-center justify-center m-auto flex mb-10 pt-10 text-primary hover:text-secondary">
-                Undangan Digital{" "}
+                Undangan Digitallll{" "}
                 <FlipWords className="text-secondary" words={words} />
               </h1>
               <TabsUndanganDigital tabs={tabs} tabsCard={tabsCard} />
