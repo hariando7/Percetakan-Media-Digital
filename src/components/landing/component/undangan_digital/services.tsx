@@ -3,20 +3,10 @@
 import React from "react";
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import Image from "next/image";
-import { Tabs } from "@/components/ui/tabs";
 import {
   BentoGrid,
   BentoGridItem,
 } from "@/components/ui/bento-grid-undangan-digital";
-import {
-  IconArrowWaveRightUp,
-  // IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
-import Link from "next/link";
 import { TabsUndanganDigital } from "@/components/ui/tabs_undangan_digital";
 import { FlipWords } from "@/components/ui/flip-words";
 import { BsWhatsapp } from "react-icons/bs";
@@ -33,11 +23,11 @@ function UndanganDigitalComponents() {
   };
 
   const tabs = [
-    {
-      title: "Tema Pilihan",
-      value: "Tema Pilihan",
-      content: <></>,
-    },
+    // {
+    //   title: "Tema Pilihan",
+    //   value: "Tema Pilihan",
+    //   content: <></>,
+    // },
     {
       title: "Tema Premium",
       value: "Tema Premium",
@@ -100,17 +90,17 @@ function UndanganDigitalComponents() {
     },
   ];
 
-  const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-  );
+  // const Skeleton = () => (
+  //   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+  // );
 
-  const temapilihan = [
-    {
-      title: "The Dawn of Innovation",
-      description: "Explore the birth of groundbreaking ideas and inventions.",
-      header: <Skeleton />,
-    },
-  ];
+  // const temapilihan = [
+  //   {
+  //     title: "The Dawn of Innovation",
+  //     description: "Explore the birth of groundbreaking ideas and inventions.",
+  //     header: <Skeleton />,
+  //   },
+  // ];
 
   const temaPremium = [
     // Tema Premium 1
@@ -123,7 +113,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-01", "_blank")
             }
             src="/assets/images/premium1.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -134,7 +124,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -176,7 +166,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-02", "_blank")
             }
             src="/assets/images/premium2.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -187,7 +177,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -229,7 +219,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-03", "_blank")
             }
             src="/assets/images/premium3.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -240,7 +230,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -282,7 +272,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-04", "_blank")
             }
             src="/assets/images/premium4.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -293,7 +283,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -335,7 +325,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-05", "_blank")
             }
             src="/assets/images/premium5.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -346,7 +336,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -388,7 +378,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-06", "_blank")
             }
             src="/assets/images/premium6.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -399,7 +389,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -441,7 +431,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-07", "_blank")
             }
             src="/assets/images/premium7.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -452,7 +442,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -494,7 +484,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-08", "_blank")
             }
             src="/assets/images/premium8.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -505,7 +495,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -547,7 +537,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-09", "_blank")
             }
             src="/assets/images/premium9.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -558,7 +548,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -600,7 +590,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-10", "_blank")
             }
             src="/assets/images/premium10.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -611,7 +601,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -655,7 +645,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-11", "_blank")
             }
             src="/assets/images/premium11.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -666,7 +656,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -710,7 +700,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-12", "_blank")
             }
             src="/assets/images/premium12.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -721,7 +711,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -765,7 +755,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-13", "_blank")
             }
             src="/assets/images/premium13.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -776,7 +766,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -820,7 +810,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-14", "_blank")
             }
             src="/assets/images/premium14.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -831,7 +821,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -875,7 +865,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-15", "_blank")
             }
             src="/assets/images/premium15.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -886,7 +876,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -930,7 +920,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/premium-16", "_blank")
             }
             src="/assets/images/premium16.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -941,7 +931,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -987,7 +977,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/khitan-01", "_blank")
             }
             src="/assets/images/khitan1.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -998,7 +988,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1040,7 +1030,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/khitan-02", "_blank")
             }
             src="/assets/images/khitan2.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1051,7 +1041,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1093,7 +1083,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/khitan-03", "_blank")
             }
             src="/assets/images/khitan3.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1104,7 +1094,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1151,7 +1141,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/tasmiyahAqiqah1.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1162,7 +1152,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1212,7 +1202,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/tasmiyahAqiqah2.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1223,7 +1213,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1272,7 +1262,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-bali/", "_blank")
             }
             src="/assets/images/adat-bali.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1283,7 +1273,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1325,7 +1315,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-banjar/", "_blank")
             }
             src="/assets/images/adat-banjar.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1336,7 +1326,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1383,7 +1373,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-batak/", "_blank")
             }
             src="/assets/images/adat-batak.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1394,7 +1384,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1438,7 +1428,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-betawi/", "_blank")
             }
             src="/assets/images/adat-betawi.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1449,7 +1439,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1496,7 +1486,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-bugis/", "_blank")
             }
             src="/assets/images/adat-bugis.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1507,7 +1497,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1551,7 +1541,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-jawa/", "_blank")
             }
             src="/assets/images/adat-jawa.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1562,7 +1552,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1607,7 +1597,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/adat-jawa-batik.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1618,7 +1608,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1665,7 +1655,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-minang/", "_blank")
             }
             src="/assets/images/adat-minang.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1676,7 +1666,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1726,7 +1716,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/adat-kalimantan.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1737,7 +1727,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1784,7 +1774,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-papua/", "_blank")
             }
             src="/assets/images/adat-papua.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1795,7 +1785,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1839,7 +1829,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/adat-sunda/", "_blank")
             }
             src="/assets/images/adat-sunda.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1850,7 +1840,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1899,7 +1889,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/anniversary1.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1910,7 +1900,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -1960,7 +1950,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/anniversary2.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -1971,7 +1961,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2020,7 +2010,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/birthday-01/", "_blank")
             }
             src="/assets/images/birthday1.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2031,7 +2021,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2078,7 +2068,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/birthday-02/", "_blank")
             }
             src="/assets/images/birthday2.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2089,7 +2079,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2136,7 +2126,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/birthday-03/", "_blank")
             }
             src="/assets/images/birthday3.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2147,7 +2137,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2194,7 +2184,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/birthday-04/", "_blank")
             }
             src="/assets/images/birthday4.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2205,7 +2195,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2254,7 +2244,7 @@ function UndanganDigitalComponents() {
               window.open("https://percetakanmedia.com/elegant-01/", "_blank")
             }
             src="/assets/images/elegant.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2265,7 +2255,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2312,7 +2302,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/engagementday1.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2323,7 +2313,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2373,7 +2363,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/engagementday2.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2384,7 +2374,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2434,7 +2424,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/engagementday3.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2445,7 +2435,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2495,7 +2485,7 @@ function UndanganDigitalComponents() {
               )
             }
             src="/assets/images/engagementday3.png"
-            alt="dummy image"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
@@ -2506,7 +2496,7 @@ function UndanganDigitalComponents() {
         <>
           <div className="flex gap-2 justify-left mb-2">
             <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
-              Rp. 150.000
+              Rp. 149.000
             </p>
             <p className="text-sm md:text-sm text-primary items-center justify-center flex">
               Rp. 99.000
@@ -2545,144 +2535,2231 @@ function UndanganDigitalComponents() {
   ];
 
   const temaFloral = [
+    // Tema Floral 1
     {
-      title: "The Dawn of Innovation",
-      description: (
-        <>
-          <div
-            className="div"
-            onClick={() =>
-              (window.location.href =
-                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
-            }
-          >
-            Kontak saya
-          </div>
-        </>
-      ),
+      title: "Tema Floral 1",
       header: (
         <>
           <Image
-            src="/assets/images/undangan1.jpg"
-            alt="dummy image"
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/floral-01/",
+                "_blank"
+              )
+            }
+            src="/assets/images/floral1.png"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
           />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Floral 1", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/floral-01/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Floral 2
+    {
+      title: "Tema Floral 2",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/floral-02/",
+                "_blank"
+              )
+            }
+            src="/assets/images/floral2.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Floral 2", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/floral-02/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Floral 3
+    {
+      title: "Tema Floral 3",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/floral-03/",
+                "_blank"
+              )
+            }
+            src="/assets/images/floral3.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Floral 3", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/floral-03/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Floral 4
+    {
+      title: "Tema Floral 4",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/floral-04/",
+                "_blank"
+              )
+            }
+            src="/assets/images/floral4.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Floral 4", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/floral-04/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Floral 5
+    {
+      title: "Tema Floral 5",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/floral-05/",
+                "_blank"
+              )
+            }
+            src="/assets/images/floral5.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Floral 5", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/floral-05/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Floral 6
+    {
+      title: "Tema Floral 6",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/floral-06/",
+                "_blank"
+              )
+            }
+            src="/assets/images/floral6.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Floral 6", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/floral-06/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Floral 7
+    {
+      title: "Tema Floral 7",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/floral-07/",
+                "_blank"
+              )
+            }
+            src="/assets/images/floral7.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Floral 7", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/floral-07/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Floral 8
+    {
+      title: "Tema Floral 8",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/floral-08/",
+                "_blank"
+              )
+            }
+            src="/assets/images/floral8.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Floral 8", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/floral-08/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
         </>
       ),
     },
   ];
 
   const temaMinimalist = [
+
+    // Tema Minimalist 1
     {
-      title: "The Dawn of Innovation",
-      description: (
-        <>
-          <div
-            className="div"
-            onClick={() =>
-              (window.location.href =
-                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
-            }
-          >
-            Kontak saya
-          </div>
-        </>
-      ),
+      title: "Tema Minimalist 1",
       header: (
         <>
           <Image
-            src="/assets/images/undangan1.jpg"
-            alt="dummy image"
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-01/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist1.png"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
           />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 1", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-01/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 2
+    {
+      title: "Tema Minimalist 2",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-02/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist2.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 2", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-02/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 3
+    {
+      title: "Tema Minimalist 3",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-03/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist3.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 3", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-03/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 4
+    {
+      title: "Tema Minimalist 4",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-04/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist4.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 4", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-04/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 5
+    {
+      title: "Tema Minimalist 5",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-05/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist5.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 5", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-05/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 6
+    {
+      title: "Tema Minimalist 6",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-06/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist6.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 6", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-06/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 7
+    {
+      title: "Tema Minimalist 7",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-07/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist7.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 7", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-07/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 8
+    {
+      title: "Tema Minimalist 8",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-08/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist8.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 8", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-08/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 9
+    {
+      title: "Tema Minimalist 9",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-09/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist9.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 9", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-09/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 10
+    {
+      title: "Tema Minimalist 10",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-10/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist10.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 10", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-10/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Minimalist 11
+    {
+      title: "Tema Minimalist 11",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/minimalist-11/",
+                "_blank"
+              )
+            }
+            src="/assets/images/minimalist11.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Minimalist 11", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/minimalist-11/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
         </>
       ),
     },
   ];
 
   const temaWatercolor = [
+
+    // Tema Watercolor 1
     {
-      title: "The Dawn of Innovation",
-      description: (
-        <>
-          <div
-            className="div"
-            onClick={() =>
-              (window.location.href =
-                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
-            }
-          >
-            Kontak saya
-          </div>
-        </>
-      ),
+      title: "Tema Watercolor 1",
       header: (
         <>
           <Image
-            src="/assets/images/undangan1.jpg"
-            alt="dummy image"
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/watercolor-01/",
+                "_blank"
+              )
+            }
+            src="/assets/images/watercolor1.png"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
           />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Watercolor 1", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/watercolor-01/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Watercolor 2
+    {
+      title: "Tema Watercolor 2",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/watercolor-02/",
+                "_blank"
+              )
+            }
+            src="/assets/images/watercolor2.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Watercolor 2", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/watercolor-02/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Watercolor 3
+    {
+      title: "Tema Watercolor 3",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/watercolor-03/",
+                "_blank"
+              )
+            }
+            src="/assets/images/watercolor3.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Watercolor 3", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/watercolor-03/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Watercolor 4
+    {
+      title: "Tema Watercolor 4",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/watercolor-04/",
+                "_blank"
+              )
+            }
+            src="/assets/images/watercolor4.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Watercolor 4", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/watercolor-04/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
         </>
       ),
     },
   ];
 
   const temaOthers = [
+
+    // Tema Others 1
     {
-      title: "The Dawn of Innovation",
-      description: (
-        <>
-          <div
-            className="div"
-            onClick={() =>
-              (window.location.href =
-                "https://wa.me/62895637316999?text=Halo%YAYA%,%20saya%20ingin%20bertanya%20tentang%20Produk%201,%20harga%20dan%20lain-lain")
-            }
-          >
-            Kontak saya
-          </div>
-        </>
-      ),
+      title: "Tema Others 1",
       header: (
         <>
           <Image
-            src="/assets/images/undangan1.jpg"
-            alt="dummy image"
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-01/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others1.png"
+            alt="tidak ada gambar"
             width="500"
             height="500"
             className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
           />
         </>
       ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 1", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-01/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 2
+    {
+      title: "Tema Others 2",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-02/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others2.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 2", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-02/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 3
+    {
+      title: "Tema Others 3",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-03/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others3.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 3", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-03/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 4
+    {
+      title: "Tema Others 4",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-04/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others4.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 4", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-04/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 5
+    {
+      title: "Tema Others 5",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-05/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others5.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 5", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-05/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 6
+    {
+      title: "Tema Others 6",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-06/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others6.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 6", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-06/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 7
+    {
+      title: "Tema Others 7",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-07/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others7.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 7", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-07/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 8
+    {
+      title: "Tema Others 8",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-08/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others8.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 8", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-08/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 9
+    {
+      title: "Tema Others 9",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-09/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others9.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 9", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-09/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 10
+    {
+      title: "Tema Others 10",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-10/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others10.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 10", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-10/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 11
+    {
+      title: "Tema Others 11",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-11/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others11.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 11", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-11/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 12
+    {
+      title: "Tema Others 12",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-12/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others12.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 12", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-12/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
+    },
+
+    // Tema Others 13
+    {
+      title: "Tema Others 13",
+      header: (
+        <>
+          <Image
+            onClick={() =>
+              window.open(
+                "https://percetakanmedia.com/others-13/",
+                "_blank"
+              )
+            }
+            src="/assets/images/others13.png"
+            alt="tidak ada gambar"
+            width="500"
+            height="500"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"
+          />
+        </>
+      ),
+      description: (
+        <>
+          <div className="flex gap-2 justify-left mb-2">
+            <p className="text-xs md:text-sm items-center justify-center flex text-secondary line-through">
+              Rp. 149.000
+            </p>
+            <p className="text-sm md:text-sm text-primary items-center justify-center flex">
+              Rp. 99.000
+            </p>
+          </div>
+
+          <div className="flex gap-2 cursor-pointer justify-between">
+            <button
+              onClick={() =>
+                handleWhatsAppClick("Tema Others 13", "Rp 99.000")
+              }
+              className="px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-lg border-secondary bg-transparent text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <p className="sm:text-base md:text-xs text-primary items-center justify-center flex">
+                  Pesan Sekarang{" "}
+                </p>
+                <BsWhatsapp className="w-7 h-7 text-green-700 items-center justify-center flex m-auto" />
+              </div>
+            </button>
+            <button
+              className={`px-4 py-2 rounded-md border transition duration-200 text-sm sm:text-base md:text-sm border-green-500 bg-green-600 text-secondary-foreground hover:shadow-[4px_4px_0px_0px_#06264d] cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://percetakanmedia.com/others-13/",
+                  "_blank"
+                )
+              }
+            >
+              Demo
+            </button>
+          </div>
+        </>
+      ),
     },
   ];
 
   const tabsCard = [
-    {
-      title: "Tema Pilihan",
-      value: "Tema Pilihan",
-      content: (
-        <BentoGrid className="max-w-4xl md:max-w-full mx-auto">
-          {temapilihan.map((item, i) => (
-            <BentoGridItem
-              key={i}
-              title={item.title}
-              description={item.description}
-              header={item.header}
-              // icon={item.icon}
-              className={i === 1 || i === 8 ? "md:col-span-1" : "bg-white"}
-            />
-          ))}
-        </BentoGrid>
-      ),
-    },
+    // {
+    //   title: "Tema Pilihan",
+    //   value: "Tema Pilihan",
+    //   content: (
+    //     <BentoGrid className="max-w-4xl md:max-w-full mx-auto">
+    //       {temapilihan.map((item, i) => (
+    //         <BentoGridItem
+    //           key={i}
+    //           title={item.title}
+    //           description={item.description}
+    //           header={item.header}
+    //           // icon={item.icon}
+    //           className={i === 1 || i === 8 ? "md:col-span-1" : "bg-white"}
+    //         />
+    //       ))}
+    //     </BentoGrid>
+    //   ),
+    // },
     {
       title: "Tema Premium",
       value: "Tema Premium",
@@ -2935,7 +5012,7 @@ function UndanganDigitalComponents() {
         <>
           <section className="bg-gradient-to-b from-white via-white to-white animate-gradient">
             {/* konten */}
-            <div className="h-[2900px] md:h-[900px] w-full p-10 md:p-10 flex justify-between [perspective:1000px] relative flex-col max-w-7xl mx-auto items-start">
+            <div className="h-[3300px] md:h-[900px] w-full p-10 md:p-10 flex justify-between [perspective:1000px] relative flex-col max-w-7xl mx-auto items-start">
               <Image
                 src="/assets/images/logo-horizontal.png"
                 width={400}

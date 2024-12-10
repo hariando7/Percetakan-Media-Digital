@@ -2,10 +2,6 @@
 
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
-import HeroDekstop from "../component/Hero";
-import ServicesComponents from "../component/Services";
-import AdvertisementComponents from "../component/Advertisement";
-import ClientComponents from "../component/Client";
 import FooterComponents from "../component/Footer";
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import {
@@ -15,22 +11,23 @@ import {
   ProductItem,
 } from "@/components/ui/navbar-menu";
 import { FloatingDock } from "@/components/ui/floating-dock";
+import { FcInvite } from "react-icons/fc";
 import {
   // IconBrandGithub,
-  IconBrandX,
-  IconExchange,
+  // IconBrandX,
+  // IconExchange,
   IconHome,
   // IconNewSection,
-  IconTerminal2,
+  // IconTerminal2,
+  // FcInvite
 } from "@tabler/icons-react";
 import UndanganDigitalComponents from "../component/undangan_digital/services";
-import Link from "next/link";
 
 const links = [
   {
     title: "Beranda",
     icon: (
-      <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <IconHome className="h-full w-full text-white" />
     ),
     href: "#",
   },
@@ -38,36 +35,36 @@ const links = [
   {
     title: "Layanan",
     icon: (
-      <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <FcInvite className="h-full w-full text-white" />
     ),
     href: "#",
   },
   // {
   //   title: "Portfolio",
   //   icon: (
-  //     <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //     <IconNewSection className="h-full w-full text-white" />
   //   ),
   //   href: "#",
   // },
-  {
-    title: "Paket & Harga",
-    icon: (
-      <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "#",
-  },
+  // {
+  //   title: "Paket & Harga",
+  //   icon: (
+  //     <IconExchange className="h-full w-full text-white" />
+  //   ),
+  //   href: "#",
+  // },
 
-  {
-    title: "Testimoni",
-    icon: (
-      <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "#",
-  },
+  // {
+  //   title: "Testimoni",
+  //   icon: (
+  //     <IconBrandX className="h-full w-full text-white" />
+  //   ),
+  //   href: "#",
+  // },
   // {
   //   title: "Kontak",
   //   icon: (
-  //     <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //     <IconBrandGithub className="h-full w-full text-white" />
   //   ),
   //   href: "#",
   // },
