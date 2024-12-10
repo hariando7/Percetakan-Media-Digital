@@ -17,11 +17,11 @@ import {
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   // IconBrandGithub,
-  IconBrandX,
-  IconExchange,
+  // IconBrandX,
+  // IconExchange,
   IconHome,
   // IconNewSection,
-  IconTerminal2,
+  // IconTerminal2,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { FcInvite } from "react-icons/fc";

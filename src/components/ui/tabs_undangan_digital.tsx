@@ -28,6 +28,7 @@ export const TabsUndanganDigital = ({
   const [active, setActive] = useState<Tab>(propTabs[0]);
   // const [activeCard, setActiveCard] = useState<Tab>(propTabs[0]);
   const [activeCard, setActiveCard] = useState<Tab>(propTabsCard[0]);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [tabs, setTabs] = useState<Tab[]>(propTabs);
 
   const moveSelectedTabToTop = (idx: number) => {
@@ -43,7 +44,7 @@ export const TabsUndanganDigital = ({
     newTabsCard.unshift(selectedCard[0]);
     setActiveCard(newTabsCard[0]);
   };
-
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [hovering, setHovering] = useState(false);
 
   const isMobile = useMediaQuery("(max-width: 768px)");
